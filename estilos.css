@@ -84,3 +84,28 @@ h1 {
   font-style: italic;
   box-shadow: 4px 4px 8px #8a69a2, -4px -4px 8px #c6aee1;
 }
+
+@media (max-width: 768px) {
+  .malla-grid {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 10px;
+  }
+
+  .semestre {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .ramo {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+}
