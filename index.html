@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva Obstetricia UChile – Universidad de Chile</title>
+  <meta name="description" content="Explora la malla curricular interactiva de Obstetricia y Puericultura en la Universidad de Chile. Descubre requisitos por semestre y desbloquea ramos al aprobar.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <h1>Obstetricia y Puericultura UChile</h1>
+  <div class="malla-grid">
+    <div class="semestre" id="sem1">
+      <h2>1° Semestre</h2>
+      <div class="ramo" id="fundamentos1" onclick="aprobar('fundamentos1')">Fundamentos de Enfermería I</div>
+      <div class="ramo" id="quimica" onclick="aprobar('quimica')">Química General y Orgánica</div>
+      <div class="ramo" id="biologia" onclick="aprobar('biologia')">Biología Celular y Genética</div>
+      <div class="ramo" id="mate" onclick="aprobar('mate')">Matemáticas</div>
+      <div class="ramo" id="fisica" onclick="aprobar('fisica')">Física</div>
+      <div class="ramo" id="educacion1" onclick="aprobar('educacion1')">Educación en Salud I</div>
+      <div class="ramo" id="cs_sociales1" onclick="aprobar('cs_sociales1')">Cs. Sociales y Salud I</div>
+      <div class="ramo" id="cfg1" onclick="aprobar('cfg1')">Curso de Formación General I</div>
+      <div class="ramo" id="ingles1" onclick="aprobar('ingles1')">Inglés I</div>
+    </div>
+
+    <div class="semestre" id="sem2">
+      <h2>2° Semestre</h2>
+      <div class="ramo bloqueado" id="saludcom1" onclick="aprobar('saludcom1')">Salud Comunitaria I</div>
+      <div class="ramo bloqueado" id="bioquimica" onclick="aprobar('bioquimica')">Bioquímica</div>
+      <div class="ramo bloqueado" id="biodesarrollo" onclick="aprobar('biodesarrollo')">Biología del Desarrollo y Embriología Humana</div>
+      <div class="ramo bloqueado" id="fisiologia" onclick="aprobar('fisiologia')">Fisiología General</div>
+      <div class="ramo bloqueado" id="anatomia" onclick="aprobar('anatomia')">Anatomía</div>
+      <div class="ramo bloqueado" id="histologia" onclick="aprobar('histologia')">Histología</div>
+      <div class="ramo bloqueado" id="integracion1" onclick="aprobar('integracion1')">Integración al Desempeño Profesional I</div>
+      <div class="ramo" id="cfg2" onclick="aprobar('cfg2')">Curso de Formación General II</div>
+      <div class="ramo bloqueado" id="ingles2" onclick="aprobar('ingles2')">Inglés II</div>
+    </div>
+
+    <div class="semestre" id="sem3">
+      <h2>3° Semestre</h2>
+      <div class="ramo bloqueado" id="fundamentos2" onclick="aprobar('fundamentos2')">Fundamentos de Enfermería II</div>
+      <div class="ramo bloqueado" id="obstetricia1" onclick="aprobar('obstetricia1')">Obstetricia Fisiológica I</div>
+      <div class="ramo bloqueado" id="neonatologia1" onclick="aprobar('neonatologia1')">Neonatología I</div>
+      <div class="ramo bloqueado" id="fisiologia_sis" onclick="aprobar('fisiologia_sis')">Fisiología de Sistemas</div>
+      <div class="ramo bloqueado" id="inmunologia" onclick="aprobar('inmunologia')">Inmunología</div>
+      <div class="ramo bloqueado" id="agentes" onclick="aprobar('agentes')">Agentes Vivos de Enfermedad</div>
+      <div class="ramo bloqueado" id="cs_sociales2" onclick="aprobar('cs_sociales2')">Cs. Sociales y Salud II</div>
+      <div class="ramo bloqueado" id="ingles3" onclick="aprobar('ingles3')">Inglés III</div>
+    </div>
+
+    <div class="semestre" id="sem4">
+      <h2>4° Semestre</h2>
+      <div class="ramo bloqueado" id="neonatologia2" onclick="aprobar('neonatologia2')">Neonatología II</div>
+      <div class="ramo bloqueado" id="obstetricia2" onclick="aprobar('obstetricia2')">Obstetricia Fisiológica II</div>
+      <div class="ramo bloqueado" id="gineco1" onclick="aprobar('gineco1')">Ginecología Fisiológica</div>
+      <div class="ramo bloqueado" id="fisiopato" onclick="aprobar('fisiopato')">Fisiopatología</div>
+      <div class="ramo bloqueado" id="infectologia" onclick="aprobar('infectologia')">Infectología</div>
+      <div class="ramo bloqueado" id="farmacologia" onclick="aprobar('farmacologia')">Farmacología</div>
+      <div class="ramo bloqueado" id="integracion2" onclick="aprobar('integracion2')">Integración al Desempeño Profesional II</div>
+      <div class="ramo bloqueado" id="investigacion1" onclick="aprobar('investigacion1')">Investigación en Salud I</div>
+    </div>
+
+    <div class="semestre" id="sem5">
+      <h2>5° Semestre</h2>
+      <div class="ramo bloqueado" id="clinica_neonatal1" onclick="aprobar('clinica_neonatal1')">Clínica Neonatal I</div>
+      <div class="ramo bloqueado" id="clinica_partos1" onclick="aprobar('clinica_partos1')">Clínica de Partos I</div>
+      <div class="ramo bloqueado" id="clinica_ap1" onclick="aprobar('clinica_ap1')">Clínica de Atención Primaria I</div>
+      <div class="ramo bloqueado" id="clinica_puerperio" onclick="aprobar('clinica_puerperio')">Clínica de Puerperio</div>
+      <div class="ramo bloqueado" id="clinica_saludcom" onclick="aprobar('clinica_saludcom')">Clínica de Salud Comunitaria</div>
+      <div class="ramo bloqueado" id="modulo1" onclick="aprobar('modulo1')">Módulo Interdisciplinario I</div>
+    </div>
+
+    <div class="semestre" id="sem6">
+      <h2>6° Semestre</h2>
+      <div class="ramo bloqueado" id="neonatologia3" onclick="aprobar('neonatologia3')">Neonatología III</div>
+      <div class="ramo bloqueado" id="saludcom2" onclick="aprobar('saludcom2')">Salud Comunitaria II</div>
+      <div class="ramo bloqueado" id="obstetricia_pat" onclick="aprobar('obstetricia_pat')">Obstetricia Patológica</div>
+      <div class="ramo bloqueado" id="gestion1" onclick="aprobar('gestion1')">Gestión y Liderazgo en Salud I</div>
+      <div class="ramo bloqueado" id="educacion2" onclick="aprobar('educacion2')">Educación en Salud II</div>
+      <div class="ramo bloqueado" id="investigacion2" onclick="aprobar('investigacion2')">Investigación en Salud II</div>
+      <div class="ramo bloqueado" id="cs_sociales3" onclick="aprobar('cs_sociales3')">Cs. Sociales y Salud III</div>
+      <div class="ramo" id="cfg3" onclick="aprobar('cfg3')">Curso de Formación General III</div>
+    </div>
+
+    <div class="semestre" id="sem7">
+      <h2>7° Semestre</h2>
+      <div class="ramo bloqueado" id="enfermeria_mq" onclick="aprobar('enfermeria_mq')">Enfermería Médico Quirúrgica</div>
+      <div class="ramo bloqueado" id="reproduccion" onclick="aprobar('reproduccion')">Reproducción Humana</div>
+      <div class="ramo bloqueado" id="gineco_pat" onclick="aprobar('gineco_pat')">Ginecología Patológica</div>
+      <div class="ramo bloqueado" id="gestion2" onclick="aprobar('gestion2')">Gestión y Liderazgo en Salud II</div>
+      <div class="ramo bloqueado" id="investigacion3" onclick="aprobar('investigacion3')">Investigación en Salud III</div>
+      <div class="ramo bloqueado" id="cs_sociales4" onclick="aprobar('cs_sociales4')">Cs. Sociales y Salud IV</div>
+      <div class="ramo" id="cfg4" onclick="aprobar('cfg4')">Curso de Formación General IV</div>
+      <div class="ramo bloqueado" id="ingles4" onclick="aprobar('ingles4')">Inglés IV</div>
+    </div>
+
+    <div class="semestre" id="sem8">
+      <h2>8° Semestre</h2>
+      <div class="ramo bloqueado" id="clinica_neonatal2" onclick="aprobar('clinica_neonatal2')">Clínica Neonatal II</div>
+      <div class="ramo bloqueado" id="clinica_partos2" onclick="aprobar('clinica_partos2')">Clínica de Partos II</div>
+      <div class="ramo bloqueado" id="clinica_ap2" onclick="aprobar('clinica_ap2')">Clínica Atención Primaria II</div>
+      <div class="ramo bloqueado" id="alto_riesgo" onclick="aprobar('alto_riesgo')">Clínica Alto Riesgo Obstétrico</div>
+      <div class="ramo bloqueado" id="clinica_mq" onclick="aprobar('clinica_mq')">Clínica de Enfermería MQ</div>
+      <div class="ramo bloqueado" id="modulo2" onclick="aprobar('modulo2')">Módulo Interdisciplinario II</div>
+    </div>
+
+    <div class="semestre" id="sem9">
+      <h2>9° Semestre</h2>
+      <div class="ramo bloqueado" id="internado_neonatologia" onclick="aprobar('internado_neonatologia')">Internado Neonatología</div>
+      <div class="ramo bloqueado" id="internado_obstetricia" onclick="aprobar('internado_obstetricia')">Internado Obstetricia</div>
+      <div class="ramo bloqueado" id="internado_ap" onclick="aprobar('internado_ap')">Internado Atención Primaria</div>
+      <div class="ramo bloqueado" id="internado_gineco" onclick="aprobar('internado_gineco')">Internado Ginecología</div>
+      <div class="ramo bloqueado" id="internado_electivo" onclick="aprobar('internado_electivo')">Internado Electivo</div>
+      <div class="ramo bloqueado" id="seminario1" onclick="aprobar('seminario1')">Seminario Unidad Investigación I</div>
+    </div>
+
+    <div class="semestre" id="sem10">
+      <h2>10° Semestre</h2>
+      <div class="ramo bloqueado" id="internado_neonatologia1" onclick="aprobar('internado_neonatologia1')">Internado Neonatología</div>
+      <div class="ramo bloqueado" id="internado_obstetricia1" onclick="aprobar('internado_obstetricia1')">Internado Obstetricia</div>
+      <div class="ramo bloqueado" id="internado_ap1" onclick="aprobar('internado_ap1')">Internado Atención Primaria</div>
+      <div class="ramo bloqueado" id="internado_gineco1" onclick="aprobar('internado_gineco1')">Internado Ginecología</div>
+      <div class="ramo bloqueado" id="internado_electivo1" onclick="aprobar('internado_electivo1')">Internado Electivo</div>
+      <div class="ramo bloqueado" id="seminario2" onclick="aprobar('seminario2')">Seminario Unidad Investigación II</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <style>
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #c2185b;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  </style>
+</body>
+</html>
