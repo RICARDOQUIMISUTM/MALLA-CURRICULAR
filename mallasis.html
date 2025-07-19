@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva Ingeniería en Sistemas de Información</title>
+  <meta name="description"
+    content="Explora la malla curricular interactiva de Ingeniería en Sistemas de Información. Desbloquea ramos al aprobar sus prerrequisitos.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <h1>Ingeniería en Sistemas de Información</h1>
+  <div class="malla-grid">
+
+    <!-- Nivel 1 -->
+    <div class="semestre" id="nivel1">
+      <h2>1° Nivel</h2>
+      <div class="ramo" id="prog1" onclick="aprobar('prog1')">Introducción a la Programación</div>
+      <div class="ramo" id="so" onclick="aprobar('so')">Sistemas Operativos</div>
+      <div class="ramo" id="fsi" onclick="aprobar('fsi')">Fundamentos de Sistemas de Información</div>
+      <div class="ramo" id="discretas" onclick="aprobar('discretas')">Matemáticas Discretas</div>
+    </div>
+
+    <!-- Nivel 2 -->
+    <div class="semestre" id="nivel2">
+      <h2>2° Nivel</h2>
+      <div class="ramo bloqueado" id="poo" onclick="aprobar('poo')">Programación Orientada a Objetos</div>
+      <div class="ramo bloqueado" id="aed" onclick="aprobar('aed')">Algoritmos y Estructuras de Datos</div>
+      <div class="ramo" id="bd" onclick="aprobar('bd')">Base de Datos</div>
+      <div class="ramo" id="algebra" onclick="aprobar('algebra')">Álgebra Lineal</div>
+    </div>
+
+    <!-- Nivel 3 -->
+    <div class="semestre" id="nivel3">
+      <h2>3° Nivel</h2>
+      <div class="ramo bloqueado" id="oad" onclick="aprobar('oad')">Objetos y Abstracción de Datos</div>
+      <div class="ramo" id="dbp" onclick="aprobar('dbp')">Desarrollo Basado en Plataforma</div>
+      <div class="ramo bloqueado" id="abd" onclick="aprobar('abd')">Administración de Base de Datos</div>
+      <div class="ramo" id="ads" onclick="aprobar('ads')">Análisis y Diseño de Sistemas</div>
+      <div class="ramo bloqueado" id="calculo1" onclick="aprobar('calculo1')">Cálculo de una Variable</div>
+    </div>
+
+    <!-- Nivel 4 -->
+    <div class="semestre" id="nivel4">
+      <h2>4° Nivel</h2>
+      <div class="ramo bloqueado" id="ada" onclick="aprobar('ada')">Análisis y Diseño de Algoritmos</div>
+      <div class="ramo" id="fisw" onclick="aprobar('fisw')">Fundamentos de Ingeniería de Software</div>
+      <div class="ramo" id="dsi" onclick="aprobar('dsi')">Desarrollo de Sistemas de Información</div>
+      <div class="ramo bloqueado" id="calculo2" onclick="aprobar('calculo2')">Cálculo de Varias Variables</div>
+      <div class="ramo" id="comunicacion" onclick="aprobar('comunicacion')">Comunicación y Lenguaje (Virtual)</div>
+    </div>
+
+    <!-- Nivel 5 -->
+    <div class="semestre" id="nivel5">
+      <h2>5° Nivel</h2>
+      <div class="ramo" id="gpn" onclick="aprobar('gpn')">Gestión de Procesos de Negocios</div>
+      <div class="ramo bloqueado" id="isw" onclick="aprobar('isw')">Ingeniería de Software</div>
+      <div class="ramo bloqueado" id="mineria" onclick="aprobar('mineria')">Minería de Datos</div>
+      <div class="ramo bloqueado" id="estadistica" onclick="aprobar('estadistica')">Estadística</div>
+      <div class="ramo" id="investigacion" onclick="aprobar('investigacion')">Introducción a la Investigación</div>
+    </div>
+
+    <!-- Nivel 6 -->
+    <div class="semestre" id="nivel6">
+      <h2>6° Nivel</h2>
+      <div class="ramo" id="psc" onclick="aprobar('psc')">Prácticas de Servicio Comunitario</div>
+      <div class="ramo bloqueado" id="progav" onclick="aprobar('progav')">Programación Avanzada</div>
+      <div class="ramo bloqueado" id="bi" onclick="aprobar('bi')">Inteligencia de Negocios</div>
+      <div class="ramo" id="sig" onclick="aprobar('sig')">Sistemas de Información Gerencial</div>
+      <div class="ramo" id="ui" onclick="aprobar('ui')">Interfaces de Usuario</div>
+    </div>
+
+    <!-- Nivel 7 -->
+    <div class="semestre" id="nivel7">
+      <h2>7° Nivel</h2>
+      <div class="ramo" id="ppp1" onclick="aprobar('ppp1')">Prácticas Laborales (PPP1)</div>
+      <div class="ramo bloqueado" id="cpd" onclick="aprobar('cpd')">Computación Paralela y Distribuida</div>
+      <div class="ramo" id="ia" onclick="aprobar('ia')">Inteligencia Artificial</div>
+      <div class="ramo" id="redes" onclick="aprobar('redes')">Redes y Comunicación</div>
+      <div class="ramo" id="infra" onclick="aprobar('infra')">Infraestructura de las TI</div>
+    </div>
+
+    <!-- Nivel 8 -->
+    <div class="semestre" id="nivel8">
+      <h2>8° Nivel</h2>
+      <div class="ramo" id="ppp2" onclick="aprobar('ppp2')">Prácticas Laborales (PPP2)</div>
+      <div class="ramo bloqueado" id="asd" onclick="aprobar('asd')">Arquitectura y Servicios Distribuidos</div>
+      <div class="ramo" id="grsti" onclick="aprobar('grsti')">Gestión de Riesgo y Seguridad</div>
+      <div class="ramo" id="caiti" onclick="aprobar('caiti')">Control y Auditoría en TI</div>
+      <div class="ramo" id="nti" onclick="aprobar('nti')">Nuevas Tecnologías e Innovación</div>
+      <div class="ramo bloqueado" id="proyecto" onclick="aprobar('proyecto')">Proyecto de Titulación</div>
+    </div>
+
+    <!-- Nivel 9 -->
+    <div class="semestre" id="nivel9">
+      <h2>9° Nivel</h2>
+      <div class="ramo" id="egasi" onclick="aprobar('egasi')">Estrategia y Gestión de SI</div>
+      <div class="ramo" id="gps" onclick="aprobar('gps')">Gestión de Proyectos de SI</div>
+      <div class="ramo" id="rscee" onclick="aprobar('rscee')">Realidad Socioeconómica del Ecuador</div>
+      <div class="ramo" id="emprendimiento" onclick="aprobar('emprendimiento')">Emprendimiento e Innovación</div>
+      <div class="ramo" id="computo_sociedad" onclick="aprobar('computo_sociedad')">Computación en la Sociedad</div>
+      <div class="ramo bloqueado" id="titulacion" onclick="aprobar('titulacion')">Desarrollo de Titulación</div>
+    </div>
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
