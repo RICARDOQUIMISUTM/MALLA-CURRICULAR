@@ -89,16 +89,23 @@
     </div>
 
     <script>
+
         document.getElementById('loginForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const codigo = document.getElementById('codigo').value.trim();
+
             if (codigo === '30122003') {
                 localStorage.setItem('codigo', codigo);
                 window.location.href = 'mallasis.html';
+            } else if (codigo === '14122003') {
+                localStorage.setItem('codigo', codigo);
+                window.location.href = 'mallaigq.html';
             } else {
                 document.getElementById('errorMsg').style.display = 'block';
             }
         });
+
+
     </script>
 </body>
 
